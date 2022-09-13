@@ -1,0 +1,12 @@
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/bin/Debug/net6.0/ClassLibrary1.deps.json
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/bin/Debug/net6.0/ClassLibrary1.dll
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/bin/Debug/net6.0/ClassLibrary1.pdb
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/obj/Debug/net6.0/ClassLibrary1.csproj.AssemblyReference.cache
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/obj/Debug/net6.0/ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/obj/Debug/net6.0/ClassLibrary1.AssemblyInfoInputs.cache
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/obj/Debug/net6.0/ClassLibrary1.AssemblyInfo.cs
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/obj/Debug/net6.0/ClassLibrary1.csproj.CoreCompileInputs.cache
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/obj/Debug/net6.0/ClassLibrary1.dll
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/obj/Debug/net6.0/refint/ClassLibrary1.dll
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/obj/Debug/net6.0/ClassLibrary1.pdb
+/home/garlichorse/RiderProjects/TD test/ClassLibrary1/obj/Debug/net6.0/ref/ClassLibrary1.dll
