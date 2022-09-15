@@ -8,27 +8,47 @@ public class TD2 : TDManager
     {
     }
     
-    
-    
-    
-
-    static void Exercice1()
+    //Température de l'air
+    public void Exercice1()
     {
         double temperature;
         temperature = Convert.ToDouble(Console.ReadLine());
+
+        if (temperature <= 0)
+        {
+            Console.WriteLine("Grrr il fait glacial !");
+        }
         
         if (temperature > 0 && temperature <= 10)
         {
+            Console.WriteLine("Grrr il fait froid !");
+        }
 
+        if (temperature > 10 && temperature <= 20)
+        {
+            Console.WriteLine("Yes il fait bon !");
+            
         }
         
+        if (temperature > 20 && temperature <= 50)
+        {
+            Console.WriteLine("Ouf il fait chaud !");
+            
+        }
+        
+        if (temperature > 50 && temperature <= 80)
+        {
+            Console.WriteLine("Ayaya il fait trop chaud !");
+        }
 
-
-
-
+        if (temperature > 80)
+        {
+            Console.WriteLine("Oulala c’est un four !");
+        }
     }
-
-    static void Exercice2()
+    
+    //Afficher les n premiers nombres entiers
+    public void Exercice2()
     {
         int n = Convert.ToInt32(Console.ReadLine());
         for (int i = 1; i < n; i++)
@@ -51,14 +71,13 @@ public class TD2 : TDManager
     {
         Console.WriteLine("UN ENTIER STRICTEMENT POSITIF SVP");
         int n = Convert.ToInt32(Console.ReadLine());
-        while(n > 0){
+        while(n > 0)
+        {
             Console.WriteLine("MAUVAIS FORMAT. UN ENTIER STRICTEMENT POSITIF SVP");
             n = Convert.ToInt32(Console.ReadLine());
-            
         }
 
-        Console.WriteLine("OK.");
-        
+        Console.WriteLine("OK."); 
     }
     //Année bissextile
     public void Exercice5()
@@ -161,21 +180,25 @@ public class TD2 : TDManager
     //Sablier
     public void Exercice11()
     {
+        int n = NombrePositif();
 
-        Console.WriteLine("Saisir la hauteur du sablier");
-        int n = Convert.ToInt32(Console.ReadLine());
-        for (int i = 0; i<n;i++)
+        for (int i = 1; i <= n; i++)
         {
-            for (int j = 0; j < i; j++) 
-                Console.Write(" ");
-
-            for (int k = (n * 2 - 1); k > i * 2; k--) 
-                Console.Write("*");
-            
+            for (int k = 1; k < i; k++) Console.Write(" ");
+            for (int j = i; j <= n; j++) Console.Write("* ");
             Console.Write("\n");
         }
-        
+
+        for (int i = n - 1; i >= 1; i--)
+        {
+            for (int p = 1; p < i; p++) Console.Write(" ");
+            for (int j = i; j <= n; j++) Console.Write("* ");
+            Console.Write("\n");
+        }
+
+
     }
+
     //Matrice d'étoiles (starMatrix)
     public void Exercice12()
     {
@@ -220,7 +243,7 @@ public class TD2 : TDManager
         Console.WriteLine("La somme de ces termes est égale à " + somme);
 
     }
-
+    //Pyramide inversée
     public void Exercice14()
     {
         Console.WriteLine("Saisir la hauteur de la pyramide");
@@ -239,7 +262,7 @@ public class TD2 : TDManager
         }
     }
 
-
+    //Multiplication à l'aide des additions
     public void Exercice15()
     {
         int n = Convert.ToInt32(Console.ReadLine());
@@ -253,19 +276,7 @@ public class TD2 : TDManager
         
         Console.WriteLine(multiplication); 
     }
-
-    static int multiplicationM(int a, int b)
-    {
-        int multiplication = 0;
-        
-        for (int i = 1; i <= a ;i++)
-        {
-            multiplication += b;
-        }
-
-        return multiplication;
-
-    }
+    
     //Puissance à l'aide des multiplications
     public void Exercice16()
     {
@@ -317,11 +328,57 @@ public class TD2 : TDManager
 
         Console.WriteLine(factorielle);
     }
+
+    //Epargne de Julie
+    public void Exercice19()
+    {
+        Console.WriteLine("Quel est l'âge de Julie ?");
+        int  n = Convert.ToInt32(Console.ReadLine());
+        int somme = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            somme = somme + 80 + 2 * i;
+        }
+        Console.WriteLine(somme);
+    }
+    
+
+    //Liste des diviseurs.
+    public void Exercice20()
+    {
+        Console.WriteLine("Veuillez entrer un nombre entier.");
+        int n = Convert.ToInt32(Console.ReadLine());
+        for (int i = 1; i < n; i++)
+        {
+            if (n % i == 0)
+            {
+                Console.Write(i+",");
+            }
+        }
+
+        Console.WriteLine(n);
+
+
+
+    }
+    
+    
+    
     
     //PGDC de deux nombres
     public void Exercice21()
     {
-      
+        int a = NombrePositif();
+        int b = NombrePositif();
+        int r;
+        while (b > 0)
+        {
+            r = a % b;
+            a = b;
+            b = r; 
+        }
+
+        Console.WriteLine("Le PGCD est : " + a);
         
         
         
@@ -398,7 +455,7 @@ public class TD2 : TDManager
         }
         Console.WriteLine("La somme des premiers termes de la suite de Fibonnaci pour n = "+n+" est " + somme);
     }
-
+    //Saisie de mot
     public void Exercice24()
     {
         Console.WriteLine("Entrer un mot de passe à 6 caractères.");
@@ -415,64 +472,72 @@ public class TD2 : TDManager
         Console.WriteLine("Le mot de passe est dans le bon format : " + pass);
     }
 
-
-    static void Exercice25()
+    //Nombre premier
+    public void Exercice25()
     {
-        
-        
-        
-        
-    }
-
-    static Boolean estpositif(int n)
-    {
-
-        if (n >= 0)
+        int x;
+        x = NombrePositif();
+        bool flag = true;
+        for (int i = 2; i < x;i++)
         {
-            return true;
-            
+            if (x % i == 0)
+            {
+                flag = false;
+
+            }
+        }
+        if (flag)
+        {
+            Console.WriteLine(x + " est un nombre premier.");
         }
         else
         {
-
-            return false;
-
+            
+            Console.WriteLine(x + " n'est pas un nombre premier."); 
         }
-        
-        
-        
     }
-    
-    
+    //Somme chiffres d'un factoriel
     public void Exercice26()
     {
-        int n = Convert.ToInt32(Console.ReadKey());
-
-        if (estpositif(n))
+        int factorielleN = factorielle(NombrePositif());
+        String factorielleS = factorielleN.ToString();
+        int somme = 0;
+        foreach (char chiffre in factorielleS)
         {
-            String str = factorielle.ToString();
-            Console.WriteLine(str);
-
-        }
-        else
-        {
-            Console.WriteLine("Mauvais signe du nombre");
-            
+            // Pour factorielle(6)=720 j'obtenais une conversion '7' -> 55 car 55 est le code ASCII pour 7 donc faire - '0'
+            int ajout = chiffre -'0';
+            somme = somme + ajout;
         }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        Console.WriteLine("Somme " + somme);
+        }
+
+    public int NombrePositif()
+    {
+        Console.WriteLine("Veuillez rentrer un nombre positif.");
+        int n = Convert.ToInt32(Console.ReadLine());
+        while (n < 0)
+        {
+            Console.WriteLine("Mauvaise saisie. Veuillez rentrer un nombre positif.");
+            n = Convert.ToInt32(Console.ReadLine()); 
+        }
+
+        return n;
+    }
+
+    public int factorielle(int n)
+    {
+        int factorielle = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            factorielle *= i;
+
+        }
+
+        return factorielle;
     }
     
     
     
-    
+    }
 
-}

@@ -10,3 +10,15 @@
 /home/garlichorse/RiderProjects/TD test/TdProgrammation/obj/Debug/net6.0/refint/TdProgrammation.dll
 /home/garlichorse/RiderProjects/TD test/TdProgrammation/obj/Debug/net6.0/TdProgrammation.pdb
 /home/garlichorse/RiderProjects/TD test/TdProgrammation/obj/Debug/net6.0/ref/TdProgrammation.dll
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/obj/Debug/net6.0/TdProgrammation.csproj.AssemblyReference.cache
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/obj/Debug/net6.0/TdProgrammation.GeneratedMSBuildEditorConfig.editorconfig
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/obj/Debug/net6.0/TdProgrammation.AssemblyInfoInputs.cache
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/obj/Debug/net6.0/TdProgrammation.AssemblyInfo.cs
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/obj/Debug/net6.0/TdProgrammation.csproj.CoreCompileInputs.cache
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/obj/Debug/net6.0/TdProgrammation.dll
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/obj/Debug/net6.0/refint/TdProgrammation.dll
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/obj/Debug/net6.0/TdProgrammation.pdb
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/bin/Debug/net6.0/TdProgrammation.deps.json
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/bin/Debug/net6.0/TdProgrammation.dll
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/bin/Debug/net6.0/TdProgrammation.pdb
+/home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/obj/Debug/net6.0/ref/TdProgrammation.dll
