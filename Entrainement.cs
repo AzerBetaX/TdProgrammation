@@ -9,8 +9,8 @@ public class Entrainement
     {
         
         
-        TD2 td2 = new TD2("Ceci est la description du TD1", Difficulte.ASSEZ_FACILE);
-        td2.Exercice11();
+        TD3 td3 = new TD3("Ceci est la description du TD1", Difficulte.ASSEZ_FACILE);
+        td3.Exercice4();
 
 
 

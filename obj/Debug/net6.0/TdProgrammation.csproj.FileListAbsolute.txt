@@ -22,3 +22,15 @@
 /home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/bin/Debug/net6.0/TdProgrammation.dll
 /home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/bin/Debug/net6.0/TdProgrammation.pdb
 /home/garlichorse/RiderProjects/ComplProgrammationTD/TdProgrammation/obj/Debug/net6.0/ref/TdProgrammation.dll
+C:\Users\Paul\Documents\GitHub\TdProgrammation\bin\Debug\net6.0\TdProgrammation.deps.json
+C:\Users\Paul\Documents\GitHub\TdProgrammation\bin\Debug\net6.0\TdProgrammation.dll
+C:\Users\Paul\Documents\GitHub\TdProgrammation\bin\Debug\net6.0\TdProgrammation.pdb
+C:\Users\Paul\Documents\GitHub\TdProgrammation\obj\Debug\net6.0\TdProgrammation.csproj.AssemblyReference.cache
+C:\Users\Paul\Documents\GitHub\TdProgrammation\obj\Debug\net6.0\TdProgrammation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paul\Documents\GitHub\TdProgrammation\obj\Debug\net6.0\TdProgrammation.AssemblyInfoInputs.cache
+C:\Users\Paul\Documents\GitHub\TdProgrammation\obj\Debug\net6.0\TdProgrammation.AssemblyInfo.cs
+C:\Users\Paul\Documents\GitHub\TdProgrammation\obj\Debug\net6.0\TdProgrammation.csproj.CoreCompileInputs.cache
+C:\Users\Paul\Documents\GitHub\TdProgrammation\obj\Debug\net6.0\TdProgrammation.dll
+C:\Users\Paul\Documents\GitHub\TdProgrammation\obj\Debug\net6.0\refint\TdProgrammation.dll
+C:\Users\Paul\Documents\GitHub\TdProgrammation\obj\Debug\net6.0\TdProgrammation.pdb
+C:\Users\Paul\Documents\GitHub\TdProgrammation\obj\Debug\net6.0\ref\TdProgrammation.dll
