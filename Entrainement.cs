@@ -10,7 +10,7 @@ public class Entrainement
         
         
         TD3 td3 = new TD3("Ceci est la description du TD1", Difficulte.ASSEZ_FACILE);
-        td3.Exercice4();
+        td3.TestEstPair();
 
 
 

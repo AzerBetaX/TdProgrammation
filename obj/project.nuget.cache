@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tUYjwtHMFM/m0AFZ0fqNOTIBlPwiB6MT1nXWxMXzizBorM6Xsh+3Oxq5jxG44BgjwZWNHbp/Tg8SJA63trpgNw==",
+  "dgSpecHash": "r2MfZCSYiMyIRLavkxUct2oNAlzFwS/3W/MrbfZrXtDYrMoVSGSRNPSPwu3rci32Q86gF7pAy7BCkMLvO7CUJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paul\\Documents\\GitHub\\TdProgrammation\\TdProgrammation.csproj",
+  "projectFilePath": "/home/garlichorse/RiderProjects/TdProgrammation/TdProgrammation.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
