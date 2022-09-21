@@ -214,23 +214,15 @@ public class TD4 : TDManager
         Console.WriteLine("Veuillez saisir le nombre de colonnes.");
         int M = Convert.ToInt32(Console.ReadLine());
 
-        int[ , ] mat = new int[N, M];zz 
+        int[ , ] mat = new int[N, M];
         int compteur = 1;
-        mat[1][2] = compteur;
         for (int i = 0; i < mat.GetLength(0); i++)
         {
             for (int j = 0; j < mat.GetLength(1); j++)
             {
-                
-
 
             }
-                
-                
         }
-        
-
-
     }
 
     public int[,] SommeMatriciel(int[,] mat1, int[,] mat2)
@@ -262,15 +254,7 @@ public class TD4 : TDManager
         }
     }
 
-    public int[,] ProduitMatriciel(int[,] mat1, int[,] mat2)
-    {
-        int 
-        
-        
-        
-        
-        
-    }
+  
    
     
     
