@@ -97,18 +97,21 @@ public class TD4 : TDManager
         int compteur = 0;
         while (compteur != n)
         { 
-            if (compteurboucle % 2 == 1)
+            if (compteurboucle % 2 == 1 )
             {
-                
-
+                tab[compteur] = compteurboucle;
+                compteur++;
             }
 
-                
-                compteurboucle++;
+            compteurboucle++;
+               
         }
 
-
-
+    
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write(tab[i]+" ");
+        }
 
 
     }
@@ -167,6 +170,32 @@ public class TD4 : TDManager
 
 
 
+    }
+
+    public int[] GenererTableauAleratoire(int taille, int lowerbound , int uppderbound)
+    {
+        Random rand = new Random();
+        int[] tab = new int[taille];
+        for (int i = 0; i < taille; i++)
+        {
+            int val = rand.Next(lowerbound, uppderbound);
+            tab[i] = val;
+
+        }
+
+        return tab;
+
+    }
+
+    public float Moyenne(int[] tab)
+    {
+        float somme = 0F;
+        for (int i = 0; i < tab.Length; i++)
+        {
+            somme += tab[i];
+        }
+
+        return somme / tab.Length;
     }
     
     
@@ -254,7 +283,25 @@ public class TD4 : TDManager
         }
     }
 
-  
+    public int[,] ProduitMatriciel(int[,] mat1, int[,] mat2)
+    {
+        for (int i = 0; i < mat1.GetLength(0); i++)
+        {
+            for (int j = 0; j < mat1.GetLength(1); j++)
+            {
+                
+                
+                
+            }
+            
+            
+        }
+        
+        
+        
+        
+        
+    }
    
     
     
