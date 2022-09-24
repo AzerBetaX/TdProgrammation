@@ -3,12 +3,12 @@ using System.Text;
 
 namespace TdProgrammation;
 
-public class TD5
-{   
-    
-    
-    
-    
+public class TD5 : TDManager
+{ 
+    public TD5(string description, Difficulte difficulte) : base(description, difficulte)
+    {
+        
+    }
     //Classes imbriquées
     
     //Exercice1
@@ -173,10 +173,5 @@ public class TD5
 
 
     }
-    
-    
-    
-    
-    
     
 }

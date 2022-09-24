@@ -3,8 +3,12 @@ using System.Text;
 
 namespace TdProgrammation;
 
-public class TD6
+public class TD6 : TDManager
 {
+    public TD6(string description, Difficulte difficulte) : base(description, difficulte)
+    {
+        
+    }
 
     public static void Main()
     {
@@ -113,7 +117,78 @@ public class TD6
     }
     
     //Exercice2
-    
-    
+    public class region
+    {
+        private string prefet;
+        private string cheflieu;
+        private Commune[] communes;
+
+        public region(string prefet, string cheflieu,Commune[] communes)
+        {
+            this.cheflieu = cheflieu;
+            this.prefet = prefet;
+            this.communes = communes;
+        }
+        public string toString()
+        {
+            string description = "Cette région a "
+                                 + this.cheflieu +
+                                 " comme chef lieu présidé par " + prefet +
+                                 ".Cette région est composée de ces villes : ";
+            foreach (Commune commune in communes)
+            {
+                description += "\n"+"-"+commune.Nom;
+
+            }
+
+            return description;
+        }
+
+        public int population()
+        {
+            int somme = 0;
+            foreach (Commune commune in communes)
+            {
+                somme += commune.Population;
+            }
+
+            return population();
+        }
+
+        public bool estDansRegion(Commune communearg)
+        {
+            bool flag = false;
+            foreach (Commune commune in communes)
+            {
+                if (commune == communearg) flag = true;
+            }
+
+            return flag;
+        }
+
+        public Commune[] trierCommune()
+        {
+            /*
+             int n = table.Length-1;
+            for ( int i = n; i>=1; i--)
+            for ( int j = 2; j<=i; j++) 
+            if (table[j-1] > table[j])
+            {
+            int temp = table[j-1];
+            table[j-1] = table[j];
+            table[j] = temp;
+            } 
+             */
+
+            return null;
+
+        }
+        
+        
+        
+
+    }
+
+
     
 }
