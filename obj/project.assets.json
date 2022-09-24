@@ -8,26 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Paul\\.nuget\\packages\\": {}
+    "/home/garlichorse/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paul\\Documents\\GitHub\\TdProgrammation\\TdProgrammation.csproj",
+      "projectUniqueName": "/home/garlichorse/RiderProjects/TdProgrammation/TdProgrammation.csproj",
       "projectName": "TdProgrammation",
-      "projectPath": "C:\\Users\\Paul\\Documents\\GitHub\\TdProgrammation\\TdProgrammation.csproj",
-      "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paul\\Documents\\GitHub\\TdProgrammation\\obj\\",
+      "projectPath": "/home/garlichorse/RiderProjects/TdProgrammation/TdProgrammation.csproj",
+      "packagesPath": "/home/garlichorse/.nuget/packages/",
+      "outputPath": "/home/garlichorse/RiderProjects/TdProgrammation/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Paul\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/garlichorse/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/180/sdk/6.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

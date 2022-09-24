@@ -8,6 +8,14 @@ public class TD4 : TDManager
     {
     }
 
+    public static void Main()
+    {
+
+        Exercice4();
+
+
+    }
+
     //Parcours de tableaux
     public void Exercice1()
     {
@@ -30,6 +38,8 @@ public class TD4 : TDManager
         }
 
     }
+    
+    
 
 
 
@@ -52,14 +62,14 @@ public class TD4 : TDManager
         } 
     }
 
-    public void Exercice4()
+    public static void Exercice4()
     {
         Console.WriteLine("Veuillez rentrer un nombre positif");
         int n = Convert.ToInt32(Console.ReadLine());
         int[] tab = new int[n];
-        for (int i = 1; i <= n; i++)
+        for (int i = 0; i < n; i++)
         {
-            tab[i - 1] = i;
+            tab[i] = i+1;
         }
         
         for (int i = 0; i < n; i++)
@@ -168,6 +178,21 @@ public class TD4 : TDManager
 
 
     }
+
+    public void Exercice10()
+    {
+        
+        int nb = Convert.ToInt32(Console.ReadLine());		    		 	  		 			 
+        int[] tab = new int[nb];	
+        
+        for(int i=0;i<nb;i++)		    		 	  		 			 
+            tab[i] = Convert.ToInt32(Console.ReadLine());
+        int somme = 0;		 	 
+        for(int i=0;i<nb;i++)		    		 	  		 			 
+            somme += tab[i];
+        
+        Console.WriteLine("La moyenne des " + nb + " éléments est ==> " + (float)((float)somme/(float)nb));
+    }
     
     
     public bool Exercice11(int[] tab1, int[] tab2)
@@ -220,7 +245,8 @@ public class TD4 : TDManager
         {
             for (int j = 0; j < mat.GetLength(1); j++)
             {
-
+                mat[i, j] = compteur;
+                compteur++;
             }
         }
     }
@@ -249,9 +275,22 @@ public class TD4 : TDManager
         else
         {
             
-            Console.WriteLine("");
-            return null;
+            Console.WriteLine("Pas possible de faire la somme de deux matrices de différentes tailles.");
+            return mat1;
         }
+    }
+
+    public int[,] ProduitMatriciel(int[,] mat1, int[,] mat2)
+    {
+
+        int[,] mat3 = new int[mat1.GetLength(0), mat2.GetLength(1)];
+
+        return mat3;
+
+
+
+
+
     }
 
   
