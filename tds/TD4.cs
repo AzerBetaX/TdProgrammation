@@ -182,21 +182,21 @@ public class TD4 : TDManager
 
     }
 
-<<<<<<< HEAD
     public void Exercice10()
     {
-        
-        int nb = Convert.ToInt32(Console.ReadLine());		    		 	  		 			 
-        int[] tab = new int[nb];	
-        
-        for(int i=0;i<nb;i++)		    		 	  		 			 
+
+        int nb = Convert.ToInt32(Console.ReadLine());
+        int[] tab = new int[nb];
+
+        for (int i = 0; i < nb; i++)
             tab[i] = Convert.ToInt32(Console.ReadLine());
-        int somme = 0;		 	 
-        for(int i=0;i<nb;i++)		    		 	  		 			 
+        int somme = 0;
+        for (int i = 0; i < nb; i++)
             somme += tab[i];
-        
-        Console.WriteLine("La moyenne des " + nb + " éléments est ==> " + (float)((float)somme/(float)nb));
-=======
+
+        Console.WriteLine("La moyenne des " + nb + " éléments est ==> " + (float)((float)somme / (float)nb));
+    }
+
     public int[] GenererTableauAleratoire(int taille, int lowerbound , int uppderbound)
     {
         Random rand = new Random();
@@ -221,7 +221,7 @@ public class TD4 : TDManager
         }
 
         return somme / tab.Length;
->>>>>>> a70b5abde886e36b08280a790c26489f772b75b4
+
     }
     
     
@@ -312,41 +312,68 @@ public class TD4 : TDManager
 
     public int[,] ProduitMatriciel(int[,] mat1, int[,] mat2)
     {
-<<<<<<< HEAD
-
         int[,] mat3 = new int[mat1.GetLength(0), mat2.GetLength(1)];
-
-        return mat3;
-
-
-
-
-
-    }
-
-  
-=======
         for (int i = 0; i < mat1.GetLength(0); i++)
         {
-            for (int j = 0; j < mat1.GetLength(1); j++)
+            for (int j = 0; j < mat2.GetLength(1); j++)
             {
-                
-                
-                
+                int sum = 0;
+                for (int k = 0; k < mat1.GetLength(1); k++)
+                {
+                    sum += mat1[i, k] * mat2[k, j];
+                }
+
+                mat3[i, j] = sum;
             }
-            
-            
         }
-        
-        
-        
-        
-        
+
+        return mat3;
     }
->>>>>>> a70b5abde886e36b08280a790c26489f772b75b4
-   
-    
-    
-    
-    
+
+    public void Exercice14()
+    {
+        int[,] mat1 = new int[2,3];
+        int[,] mat2 =new int[3,2];
+        
+        if (mat1.GetLength(1) == mat2.GetLength(0))
+        {
+            int[,] mat3 = ProduitMatriciel(mat1, mat2);
+            for (int k = 0; k < mat3.GetLength(0); k++)
+            {
+                for (int j = 0; j < mat3.GetLength(1); j++)
+                {
+                    Console.Write(mat3[k, j] + " ");
+                }
+                Console.WriteLine();
+            }
+        }
+        else Console.WriteLine("Produit matriciel non possible");
+    }
+
+
+    public void TriBulles(int[] tab)
+    {
+        for (int i = tab.Length - 1; i >= 0; i--)
+        {
+            bool tabTri = true;
+            for (int j = 0; j <= i - 1; j++)
+            {
+                if (tab[j + 1] < tab[j])
+                {
+                    int temp = tab[j];
+                    tab[j] = tab[j + 1];
+                    tab[j + 1] = temp;
+                    tabTri = false;
+                }
+            }
+
+            if (tabTri) break; //after de terminer dans le cas triviam
+        }
+    }
+
+
+
+
+
+
 }
