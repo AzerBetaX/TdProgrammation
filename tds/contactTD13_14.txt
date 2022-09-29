@@ -1,0 +1,4 @@
+0123456789;Dupond;Leo;Famille
+9876543210;Porter;Fanny;Amis
+9846501234;Durand;Daniel;Collegue
+4321056789;David;Camille;Famille
