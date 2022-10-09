@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+
 namespace TdProgrammation;
 
 /*
@@ -145,13 +147,33 @@ public class TD8 : TDManager
             this._HTprice = hTprice;
             this.quantity = quantity;
 
+        }
 
+        public void addQuantity(int quantity)
+        {
+            if (quantity >= 0)
+            {
+                this.quantity = this.quantity + quantity;
+            }
+            
+        }
 
+        public double prixTTC()
+        {
+            return this._HTprice + this._HTprice * 0.20;
 
         }
 
-        
+        public void description()
+        {
+            Console.WriteLine(this._label + "est un produit de reference " + this._reference + " de quantité " + this.quantity + " dont le prix est " + this._HTprice);
+        }
 
+        public static bool Compare(Produit p1, Produit p2)
+        {
+            return p1._reference == p2._reference;
+        }
+        
 
 
     }
